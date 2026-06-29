@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — BagPipes TikTok Auto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">BS</div>
+  <div>
+    <div class="site-name">BagPipes</div>
+    <div class="site-sub">Apps by Sean Ryan</div>
+  </div>
+</header>
+
+<main>
+  <div class="page-wrap">
+    <a href="index.html" class="back-link">Back to home</a>
+
+    <div class="page-title">Privacy Policy</div>
+    <div class="page-scope">Applies to: BagPipes TikTok Auto (Windows desktop app)</div>
+    <div class="effective">Effective date: June 29, 2026</div>
+
+    <div class="prose">
+
+      <h2>Overview</h2>
+      <p>
+        BagPipes TikTok Auto is a Windows desktop application that crops horizontal video
+        clips to 9:16 vertical format and uploads them to TikTok via the TikTok Content
+        Posting API. This policy explains what data the app accesses, how it is used, and
+        your rights as a user.
+      </p>
+
+      <h2>TikTok permissions requested</h2>
+      <p>The app requests the following TikTok OAuth scopes when you authorize it:</p>
+      <ul>
+        <li><strong>video.upload</strong> — to upload video files to your TikTok account.</li>
+        <li><strong>video.publish</strong> — to publish uploaded videos as posts on your TikTok account.</li>
+      </ul>
+      <p>
+        The app does not access your TikTok profile, follower list, messages, comments,
+        analytics, or any other account data beyond what is needed to upload and publish
+        videos on your behalf.
+      </p>
+
+      <h2>How your data is stored</h2>
+      <p>
+        After you authorize the app, TikTok issues an access token and a refresh token.
+        These are stored exclusively on your local PC at:
+      </p>
+      <code class="mono">%APPDATA%\BSTikTokAuto\tokens.json</code>
+      <p>
+        These tokens are never transmitted to any server, database, or third party
+        controlled by the developer. They exist solely on your machine and are used
+        only to authenticate API calls made directly from the app to TikTok's servers.
+      </p>
+      <p>App preferences are stored locally at:</p>
+      <code class="mono">%APPDATA%\BSTikTokAuto\settings.json</code>
+      <p>These settings contain no personal information.</p>
+
+      <h2>Video files</h2>
+      <p>
+        The app processes video files that you select. It crops and encodes them locally
+        using ffmpeg and stores the output temporarily at:
+      </p>
+      <code class="mono">%APPDATA%\BSTikTokAuto\processed\</code>
+      <p>
+        Processed videos are uploaded directly to TikTok's API from your machine.
+        The developer does not receive copies of your video files.
+      </p>
+
+      <h2>Third-party services</h2>
+      <p>
+        The app communicates only with TikTok's official API endpoints
+        (<code>open.tiktokapis.com</code> and <code>www.tiktok.com</code>).
+        No analytics, tracking, advertising, or crash-reporting services are included.
+      </p>
+
+      <h2>Your rights</h2>
+      <ul>
+        <li>
+          <strong>Revoke access</strong> — Revoke the app's TikTok authorization at any
+          time from your TikTok account under
+          <em>Settings &amp; Privacy → Security → Authorized Apps</em>.
+        </li>
+        <li>
+          <strong>Delete local data</strong> — Delete
+          <code>%APPDATA%\BSTikTokAuto\</code> to remove all locally stored tokens
+          and settings.
+        </li>
+      </ul>
+
+      <h2>Children's privacy</h2>
+      <p>
+        The app is not directed at children under 13 and does not knowingly collect
+        information from anyone under 13.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy is updated, the revised version will be posted at this URL
+        with an updated effective date.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this privacy policy:
+        <a href="mailto:seanmryan@gmail.com">seanmryan@gmail.com</a>
+      </p>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>&copy; 2026 Sean Ryan / BagPipes</span>
+  <nav>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:seanmryan@gmail.com">Contact</a>
+  </nav>
+</footer>
+
+</body>
+</html>
