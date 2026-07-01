@@ -138,6 +138,7 @@ header a.header-link:hover { text-decoration: none; }
 
 .app-icon.tiktok  { color: #ff0044; border-color: #ff0044; background: #07070b; }
 .app-icon.carc    { color: #c8a24b; border-color: #c8a24b; background: #07070b; }
+.app-icon.vchg    { color: #00e5c7; border-color: #00e5c7; background: #07070b; }
 
 .app-name {
   font-size: 1rem;
