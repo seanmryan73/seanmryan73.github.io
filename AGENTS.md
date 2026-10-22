@@ -8,6 +8,7 @@ Static portfolio site hosted at seanmryan73.github.io. Lists all published BagPi
 
 @c:\_repos\Obsidian\Notes\Claude\Reference\Author-Version-Standards.md
 @c:\_repos\Obsidian\Notes\Claude\Reference\Core-Rules.md
+@c:\_repos\Obsidian\Notes\Claude\Reference\Core-Rules-Web.md
 
 ## Project context
 
