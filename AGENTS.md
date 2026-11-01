@@ -2,17 +2,17 @@
 
 Static portfolio site hosted at seanmryan73.github.io. Lists all published BagPipes apps. Also provides the public website URL, privacy policy, and terms of service required for TikTok API registration. Plain HTML/CSS, no build step, no JavaScript.
 
-> **Agent context — required reading.** Lines beginning with `@` below are absolute file paths (one complete path per line; paths may contain spaces). Claude Code auto-imports them. All other agents (Codex, Copilot, etc.): read every `@` file now, before doing any work.
+> **Agent context. Do this first, whichever AI tool you are.** Before any other work, open every file
+> listed under *Read at session start* with your file-read tool. They are **not** loaded automatically.
+> If one cannot be read, tell the user instead of carrying on without it.
 
-## Shared reference notes
+## Read at session start
 
-@c:\_repos\Obsidian\Notes\Claude\Reference\Author-Version-Standards.md
-@c:\_repos\Obsidian\Notes\Claude\Reference\Core-Rules.md
-@c:\_repos\Obsidian\Notes\Claude\Reference\Core-Rules-Web.md
+- `c:\_repos\Obsidian\Notes\Claude\Reference\Core-Rules.md`
+- `c:\_repos\Obsidian\Notes\Claude\Reference\Core-Rules-Web.md`
+- `c:\_repos\Obsidian\Notes\Claude\Projects\BagPipes-Site Claude Context.md`
 
-## Project context
-
-@c:\_repos\Obsidian\Notes\Claude\Projects\BagPipes-Site Claude Context.md
+Before creating a source file or script, or setting a version, read `Reference/Author-Version-Standards.md` (under `c:\_repos\Obsidian\Notes\Claude\`).
 
 ## Critical constraints
 
