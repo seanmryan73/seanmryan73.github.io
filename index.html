@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; img-src 'self' https://img.shields.io; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="BagPipes — small apps by Sean Ryan. Desktop tools and web apps for gaming and content creation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seanmryan73.github.io/">
+  <meta property="og:title" content="BagPipes — Apps by Sean Ryan">
+  <meta property="og:description" content="Small apps. Built right. Desktop tools and web apps for gaming and content creation.">
+  <meta property="og:image" content="https://seanmryan73.github.io/figures/vchanger/poster.png">
+  <meta property="og:image:alt" content="Schematic of BS-VChanger's audio path, from microphone through effect stages to a monitor speaker and VB-CABLE.">
   <title>BagPipes — Apps by Sean Ryan</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
@@ -20,9 +27,25 @@
 
 <main>
   <section class="hero">
+    <p class="eyebrow">Personal software projects</p>
     <h1>Small apps.<br><span>Built right.</span></h1>
-    <p>Personal software projects — desktop tools and web apps for gaming and content creation.</p>
+    <p>Desktop tools and web apps for gaming and content creation.</p>
   </section>
+
+  <figure class="figure-sheet">
+    <div class="figure-frame">
+      <picture>
+        <source media="(max-width: 560px)" srcset="figures/vchanger/poster-phone.svg" width="400" height="700">
+        <img src="figures/vchanger/poster.svg" width="960" height="470" alt="Schematic of BS-VChanger's audio path using the Deep Voice profile. A microphone feeds six effect stages: clean mic, noise suppression, pitch at minus 4 semitones and compressor are on, while reverb and gain are bypassed. A splitter then feeds a monitor speaker and VB-CABLE.">
+      </picture>
+    </div>
+    <figcaption class="figure-caption">
+      How BS-VChanger routes your voice, shown with six of its 17 effects. Each profile switches
+      effects on and sets their values; this is the built-in Deep Voice profile.
+    </figcaption>
+  </figure>
+
+  <h2 class="section-label">Apps</h2>
 
   <div class="apps">
 
@@ -49,6 +72,7 @@
       <div class="app-links">
         <a href="https://seanmryan73.github.io/BS-Carcassonne/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open App</a>
         <a href="https://github.com/seanmryan73/BS-Carcassonne" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="status-chip">Live</span>
       </div>
     </div>
 
@@ -76,6 +100,7 @@
       <div class="app-links">
         <a href="https://github.com/seanmryan73/BS-VChanger-Rust/releases/latest/download/bs-vchanger.exe" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download</a>
         <a href="https://github.com/seanmryan73/BS-VChanger-Rust" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <img class="release-badge" src="https://img.shields.io/github/v/release/seanmryan73/BS-VChanger-Rust?style=flat-square&amp;label=latest&amp;labelColor=142437&amp;color=29405a" height="20" alt="Latest BS-VChanger release version">
       </div>
     </div>
 
@@ -102,6 +127,7 @@
       <div class="app-links">
         <a href="https://github.com/seanmryan73/BS-ComputerMonitor/releases/latest/download/bc-computer-monitor.exe" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download</a>
         <a href="https://github.com/seanmryan73/BS-ComputerMonitor" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <img class="release-badge" src="https://img.shields.io/github/v/release/seanmryan73/BS-ComputerMonitor?style=flat-square&amp;label=latest&amp;labelColor=142437&amp;color=29405a" height="20" alt="Latest BS-ComputerMonitor release version">
       </div>
     </div>
 

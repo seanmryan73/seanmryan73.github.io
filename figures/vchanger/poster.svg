@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="t d">
+  <title id="t">BS-VChanger signal path</title>
+  <desc id="d">Schematic of the Deep Voice profile. A microphone feeds six effect stages in a row: clean mic, noise, pitch at minus 4 semitones, and compressor are on; reverb and gain are bypassed. A splitter then feeds a speaker and VB-CABLE.</desc>
+  <style>
+    .line { fill: none; stroke: #6f8ca8; stroke-width: 1.5; }
+    .thin { fill: none; stroke: #3f5972; stroke-width: 1; }
+    .box { fill: #0d1927; stroke: #6f8ca8; stroke-width: 1.5; }
+    .on { fill: #1b1422; stroke: #ff0044; stroke-width: 2; }
+    .signal { fill: none; stroke: #ff0044; stroke-width: 2.5; }
+    .off { fill: none; stroke: #6f8ca8; stroke-width: 1.5; stroke-dasharray: 5 5; }
+    .led { fill: #ff0044; }
+    .led-off { fill: #263a50; stroke: #3f5972; }
+    text { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; fill: #cfe0f0; }
+    .label { font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .note { font-size: 11px; fill: #a9bdd1; text-anchor: middle; }
+    .value { font-size: 12px; fill: #ff6d94; text-anchor: middle; font-weight: 700; }
+    .corner { font-size: 11px; fill: #a9bdd1; }
+  </style>
+
+  <rect width="960" height="470" fill="#0f1b2a"/>
+  <text class="corner" x="20" y="28">FIG. 1</text>
+  <text class="corner" x="940" y="28" text-anchor="end">BS-VCHANGER SIGNAL PATH</text>
+  <text class="corner" x="20" y="452">PROFILE SHOWN: DEEP VOICE</text>
+  <text class="corner" x="940" y="452" text-anchor="end">4 OF 6 STAGES ON · PITCH −4 ST</text>
+
+  <!-- Live signal -->
+  <path class="signal" d="M92 235H128M214 235H236M322 235H344M430 235H452M538 235H560"/>
+  <!-- Bypassed stages still pass the signal, unprocessed -->
+  <path class="signal" d="M560 235H762"/>
+  <path class="signal" d="M784 235H802M802 235V148H832M802 235V322H832"/>
+
+  <!-- Microphone -->
+  <g>
+    <rect class="box" x="48" y="166" width="44" height="82" rx="22"/>
+    <path class="thin" d="M56 186H84M54 198H86M54 210H86M56 222H84"/>
+    <path class="line" d="M70 248V304M46 304H94"/>
+    <text class="label" x="70" y="330">MIC</text>
+  </g>
+
+  <!-- Stage: clean mic -->
+  <g>
+    <rect class="on" x="128" y="172" width="86" height="126" rx="5"/>
+    <circle class="led" cx="196" cy="190" r="5"/>
+    <circle class="thin" cx="171" cy="222" r="17"/>
+    <path class="line" d="M171 222V207"/>
+    <text class="label" x="171" y="262">CLEAN</text>
+    <text class="note" x="171" y="280">MIC</text>
+  </g>
+
+  <!-- Stage: noise -->
+  <g>
+    <rect class="on" x="236" y="172" width="86" height="126" rx="5"/>
+    <circle class="led" cx="304" cy="190" r="5"/>
+    <circle class="thin" cx="279" cy="222" r="17"/>
+    <path class="line" d="M279 222V207"/>
+    <text class="label" x="279" y="262">NOISE</text>
+    <text class="note" x="279" y="280">SUPPRESS</text>
+  </g>
+
+  <!-- Stage: pitch -->
+  <g>
+    <rect class="on" x="344" y="172" width="86" height="126" rx="5"/>
+    <circle class="led" cx="412" cy="190" r="5"/>
+    <circle class="thin" cx="387" cy="222" r="17"/>
+    <path class="signal" d="M387 222L376 211"/>
+    <text class="label" x="387" y="262">PITCH</text>
+    <text class="value" x="387" y="280">−4 ST</text>
+  </g>
+
+  <!-- Stage: compressor -->
+  <g>
+    <rect class="on" x="452" y="172" width="86" height="126" rx="5"/>
+    <circle class="led" cx="520" cy="190" r="5"/>
+    <circle class="thin" cx="495" cy="222" r="17"/>
+    <path class="signal" d="M495 222L482 214"/>
+    <text class="label" x="495" y="262">COMP</text>
+    <text class="value" x="495" y="280">3:1</text>
+  </g>
+
+  <!-- Stage: reverb, bypassed -->
+  <g>
+    <rect class="off" x="560" y="172" width="86" height="126" rx="5"/>
+    <circle class="led-off" cx="628" cy="190" r="5"/>
+    <text class="label" x="603" y="262">REVERB</text>
+    <text class="note" x="603" y="280">BYPASSED</text>
+  </g>
+
+  <!-- Stage: gain, bypassed -->
+  <g>
+    <rect class="off" x="668" y="172" width="86" height="126" rx="5"/>
+    <circle class="led-off" cx="736" cy="190" r="5"/>
+    <text class="label" x="711" y="262">GAIN</text>
+    <text class="note" x="711" y="280">BYPASSED</text>
+  </g>
+
+  <!-- Splitter -->
+  <g>
+    <circle class="box" cx="773" cy="235" r="11"/>
+    <circle class="led" cx="773" cy="235" r="4"/>
+    <text class="note" x="773" y="270">SPLIT</text>
+  </g>
+
+  <!-- Speaker -->
+  <g>
+    <rect class="box" x="832" y="96" width="84" height="104" rx="5"/>
+    <circle class="thin" cx="874" cy="136" r="22"/>
+    <circle class="line" cx="874" cy="136" r="10"/>
+    <text class="label" x="874" y="184">MONITOR</text>
+  </g>
+
+  <!-- VB-CABLE -->
+  <g>
+    <rect class="box" x="832" y="282" width="84" height="84" rx="5"/>
+    <circle class="led" cx="852" cy="302" r="5"/>
+    <path class="thin" d="M868 302H900"/>
+    <text class="label" x="874" y="332">VB-CABLE</text>
+    <text class="note" x="874" y="352">TEAMS / OBS</text>
+  </g>
+</svg>

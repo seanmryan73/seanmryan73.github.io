@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" role="img" aria-labelledby="t d">
+  <title id="t">BS-VChanger signal path</title>
+  <desc id="d">Schematic of the Deep Voice profile. A microphone feeds six effect stages in a column: clean mic, noise, pitch at minus 4 semitones, and compressor are on; reverb and gain are bypassed. A splitter then feeds a monitor speaker and VB-CABLE.</desc>
+  <style>
+    .signal { fill: none; stroke: #ff0044; stroke-width: 3; }
+    .box { fill: #0d1927; stroke: #6f8ca8; stroke-width: 1.5; }
+    .on { fill: #1b1422; stroke: #ff0044; stroke-width: 2; }
+    .off { fill: #0d1927; stroke: #6f8ca8; stroke-width: 1.5; stroke-dasharray: 5 5; }
+    .led { fill: #ff0044; }
+    .led-off { fill: #263a50; stroke: #3f5972; }
+    text { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; fill: #cfe0f0; }
+    .label { font-size: 17px; font-weight: 700; }
+    .note { font-size: 14px; fill: #a9bdd1; text-anchor: end; }
+    .value { font-size: 15px; fill: #ff6d94; font-weight: 700; text-anchor: end; }
+    .corner { font-size: 13px; fill: #a9bdd1; }
+    .middle { text-anchor: middle; }
+  </style>
+
+  <rect width="400" height="700" fill="#0f1b2a"/>
+  <text class="corner" x="16" y="28">FIG. 1</text>
+  <text class="corner" x="384" y="28" text-anchor="end">DEEP VOICE PROFILE</text>
+
+  <!-- Signal runs down the column, through bypassed stages unprocessed -->
+  <path class="signal" d="M200 88V558M200 558H100V590M200 558H300V590"/>
+
+  <rect class="box" x="130" y="44" width="140" height="44" rx="22"/>
+  <text class="label middle" x="200" y="72">MIC</text>
+
+  <rect class="on" x="40" y="108" width="320" height="58" rx="5"/>
+  <circle class="led" cx="66" cy="137" r="7"/>
+  <text class="label" x="86" y="143">CLEAN MIC</text>
+  <text class="note" x="344" y="143">ON</text>
+
+  <rect class="on" x="40" y="180" width="320" height="58" rx="5"/>
+  <circle class="led" cx="66" cy="209" r="7"/>
+  <text class="label" x="86" y="215">NOISE</text>
+  <text class="note" x="344" y="215">ON</text>
+
+  <rect class="on" x="40" y="252" width="320" height="58" rx="5"/>
+  <circle class="led" cx="66" cy="281" r="7"/>
+  <text class="label" x="86" y="287">PITCH</text>
+  <text class="value" x="344" y="287">−4 ST</text>
+
+  <rect class="on" x="40" y="324" width="320" height="58" rx="5"/>
+  <circle class="led" cx="66" cy="353" r="7"/>
+  <text class="label" x="86" y="359">COMP</text>
+  <text class="value" x="344" y="359">3:1</text>
+
+  <rect class="off" x="40" y="396" width="320" height="58" rx="5"/>
+  <circle class="led-off" cx="66" cy="425" r="7"/>
+  <text class="label" x="86" y="431">REVERB</text>
+  <text class="note" x="344" y="431">BYPASSED</text>
+
+  <rect class="off" x="40" y="468" width="320" height="58" rx="5"/>
+  <circle class="led-off" cx="66" cy="497" r="7"/>
+  <text class="label" x="86" y="503">GAIN</text>
+  <text class="note" x="344" y="503">BYPASSED</text>
+
+  <text class="corner" x="212" y="550">SPLIT</text>
+
+  <rect class="box" x="30" y="590" width="150" height="70" rx="5"/>
+  <text class="label middle" x="105" y="631">MONITOR</text>
+  <rect class="box" x="220" y="590" width="150" height="70" rx="5"/>
+  <text class="label middle" x="295" y="631">VB-CABLE</text>
+  <text class="corner" x="384" y="688" text-anchor="end">4 OF 6 ON · PITCH −4 ST</text>
+</svg>
