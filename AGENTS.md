@@ -19,6 +19,7 @@ Static portfolio site hosted at seanmryan73.github.io. Lists all published BagPi
 - **No build step** — files are served as-is from GitHub Pages. Do not add npm, webpack, TypeScript, or any bundler.
 - **No JavaScript** — portfolio site is plain HTML/CSS only. Do not add JS.
 - **Keep figures accurate** — every value a figure shows comes from the app's real source, and a caption says when it shows only a sample. See `figures/vchanger/README.md`.
+- **`index.html` has a meta CSP** — it refuses scripts and frames, and images load only from this site and `img.shields.io`. A new image host or other external resource must be added there or the browser blocks it.
 - **Do not delete TikTok verification files** — `tiktokQ6MewTAmWH90sVhOtPO4AgCS6DJKBMjj.txt` must stay at repo root; TikTok may re-verify at any time.
 - **Footer must link to Terms and Privacy** — required by TikTok app review guidelines.
 - **Shared style.css** — changes affect all three pages (index, privacy, terms). Test all three after any CSS edit.
